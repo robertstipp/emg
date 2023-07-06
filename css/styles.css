@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'Helvetica Neue Condensed Bold';
+  src: url('./fonts/Helvetica\ Neue\ Condensed\ Bold.ttf') format('ttf');
+}
+
+body {
+  background-color: black;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Helvetica Neue Condensed Bold', sans-serif;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+}
+
+.hero {
+  position: relative;
+  min-height: calc(100vh - 147px);
+}
+
+.hero-heading {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.section-heading {}
+
+.bottom-right-list {
+  list-style: none;
+}
+.bottom-right-list li {
+  line-height: 1;
+}
+
+
+/* Medium screens (>=768px) */
+@media (min-width: 768px) {
+  .logo {
+    width: 250px;
+  }
+
+  .hero-heading {
+    font-size: 3.25rem;
+  }
+}
+
+
+/* Large screens (>=768px) */
+@media (min-width: 992px) {
+  .logo {
+    width: 300px;
+  }
+  .hero-heading {
+    font-size: 3.25rem;
+  }
+}
+
+/* Extra Large screens (>= 1200px) */
+@media (min-width: 1200px) {
+  .logo {
+      width: 400px;
+  }
+}
+
+
+
+.custom-input::placeholder {
+  color: white;
+}
