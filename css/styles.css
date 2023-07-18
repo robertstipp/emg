@@ -45,6 +45,10 @@ h6 {
   font-weight: 600;
 }
 
+.text-main {
+  color: #789D4A
+}
+
 .bottom-right-list {
   list-style: none;
 }
