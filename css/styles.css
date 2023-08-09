@@ -50,8 +50,12 @@ h6 {
 }
 
 .bottom-right-list {
-  list-style: none;
+  list-style-type: none; /* Remove bullets */
+  margin-bottom: 50px; /* Add margin to the bottom */
+  position: absolute; /* Position absolutely within the container */
+  right: 0; /* Align to the right of the container */
 }
+
 .bottom-right-list li {
   line-height: 1;
 }
@@ -90,4 +94,16 @@ h6 {
 
 .custom-input::placeholder {
   color: white;
+}
+
+.nav-link {
+  font-size: 24px;
+  font-family: 'Helvetica Neue Condensed Bold', sans-serif;
+  font-weight: bold;
+  color: white !important;
+}
+
+.nav-link:hover {
+  color: #789D4A !important;
+  text-decoration: underline;
 }
