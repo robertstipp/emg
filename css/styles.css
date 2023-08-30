@@ -25,7 +25,16 @@ h6 {
 .hero {
   position: relative;
   min-height: calc(100vh - 147px);
+  background-image: url(../images/hero.jpeg);
+  background-size: contain;  /* Make sure the entire image is contained */
+  background-repeat: no-repeat;  /* Do not repeat the image */
+  background-position: center;  /* Center the background image */
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
+
+
+
 
 .hero-heading {
   font-size: 3rem;
@@ -49,11 +58,24 @@ h6 {
   color: #789D4A
 }
 
+.bottom-left-list {
+  list-style-type: none; /* Remove bullets */
+  margin-bottom: 50px; /* Add margin to the bottom */
+  position: absolute; /* Position absolutely within the container */
+  left: 0; /* Align to the right of the container */
+}
+
+
 .bottom-right-list {
   list-style-type: none; /* Remove bullets */
   margin-bottom: 50px; /* Add margin to the bottom */
   position: absolute; /* Position absolutely within the container */
-  right: 0; /* Align to the right of the container */
+  right: 5%; /* Align to the right of the container */
+  top: 30%;
+  background-color: rgba(0, 0, 0, .25); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  padding: 2rem;
+  border-radius: 2%;
 }
 
 .bottom-right-list li {
@@ -79,7 +101,7 @@ h6 {
     width: 300px;
   }
   .hero-heading {
-    font-size: 3.25rem;
+    font-size: 4.25rem;
   }
 }
 
