@@ -93,6 +93,10 @@ h6 {
   padding-bottom: 2rem;
 }
 
+.border-main {
+  border-top: #789D4A 3px solid;
+}
+
 /* Medium screens (>=768px) */
 @media (min-width: 768px) {
   .logo {
