@@ -34,7 +34,7 @@ h6 {
 }
 
 .hero-heading {
-  font-size: 3rem;
+  font-size: .4rem;
   text-transform: uppercase;
 }
 
@@ -67,7 +67,11 @@ h6 {
   list-style-type: none; /* Remove bullets */
   margin-bottom: 50px; /* Add margin to the bottom */
   position: absolute; /* Position absolutely within the container */
-  left: 0; /* Align to the right of the container */
+  left: 5%; /* Align to the right of the container */
+  background-color: rgba(0, 0, 0, .25); /* Semi-transparent background */
+  backdrop-filter: blur(5px); /* Apply blur effect */
+  padding: 2rem;
+  border-radius: 2%;
 }
 
 
@@ -116,7 +120,7 @@ h6 {
     width: 300px;
   }
   .hero-heading {
-    font-size: 4.25rem;
+    font-size: 3.25rem;
   }
 }
 
