@@ -18,19 +18,19 @@ h6 {
 }
 
 .logo {
-  width: 200px;
+  width: 300px;
   height: auto;
 }
 
 .hero {
   position: relative;
-  min-height: calc(100vh - 147px);
+  min-height: calc(100vh - 307px);
   background-image: url(../images/hero.jpeg);
-  background-size: contain;  /* Make sure the entire image is contained */
+  background-size: cover;  /* Make sure the entire image is contained */
   background-repeat: no-repeat;  /* Do not repeat the image */
   background-position: center;  /* Center the background image */
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 .hero-heading {
@@ -56,6 +56,11 @@ h6 {
   color: #789D4A;
   text-transform: uppercase;
   font-weight: 600;
+}
+.tagline-heading {
+  font-size: 2rem;
+  padding-bottom: 2%;
+  font-weight: bold;
 }
 
 
@@ -105,7 +110,7 @@ h6 {
 /* Medium screens (>=768px) */
 @media (min-width: 768px) {
   .logo {
-    width: 250px;
+    width: 200px;
   }
 
   .hero-heading {
@@ -117,7 +122,7 @@ h6 {
 /* Large screens (>=768px) */
 @media (min-width: 992px) {
   .logo {
-    width: 300px;
+    width: 200px;
   }
   .hero-heading {
     font-size: 3.25rem;
@@ -127,7 +132,7 @@ h6 {
 /* Extra Large screens (>= 1200px) */
 @media (min-width: 1200px) {
   .logo {
-      width: 400px;
+      width: 300px;
   }
 }
 
