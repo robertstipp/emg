@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+  <!-- <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script> -->
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <style>
+    .feed-container {
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+
+  <!-- Header Section -->
+  <header class="text-white text-center">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <img src="images/logo2.svg" alt="EMG Logo" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active mx-2 ">
+              <a class="nav-link" href="/emg/index.html">Home</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="/emg/about.html">Press</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="/emg/feed.html">News</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="/emg/submit.html">Submit</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Submit Section-->
+  <section id="submit" class="py-5 d-flex justify-content-center">
+    <div class="container w-50">
+      <h1 class="text-white text-center">SUBMIT YOUR MUSIC</h1>
+      <p class="text-white pb-5">We only work with artists we absolutely LOVE. We strive to listen to all submissions,
+        but
+        cannot make any
+        guarantees. Please allow up to 3 weeks for a response. If we think we're the right fit, we will be in touch. For
+        general inquiries not about music submissions, please contact [**need email**]</p>
+      <form action="https://formspree.io/f/xrgjpbbv" method="POST">
+        <!-- Name Section -->
+        <section class="pb-3">
+          <h5 class="text-white">Name (required)</h5>
+          <div class="form-group-row d-flex gap-2">
+            <div class="d-flex col-md-6 flex-column">
+              <label class="text-white pb-1" for="firstname">First Name</label>
+              <input type="text" class="form-control custom-input rounded-0 text-white" style="background-color: black;"
+                name="firstname" id="firstname" placeholder="First name*">
+            </div>
+            <div class="d-flex col-md-6 flex-column">
+              <label class="text-white pb-1" for="lastname">Last Name</label>
+              <input type="text" class="form-control custom-input rounded-0 text-white" style="background-color: black;"
+                name="lastname" id="lastname" placeholder="Last name*">
+            </div>
+          </div>
+        </section>
+        <!-- Subject Section -->
+        <section class="pb-3">
+          <h5 class="text-white">Subject (required)</h5>
+          <div class="form-group-row d-flex">
+            <div class="d-flex flex-column col-12">
+              <label class="text-white pb-1" for="lastname">Reason for contacting</label>
+              <input type="text" class="form-control custom-input rounded-0 text-white" style="background-color: black;"
+                name="lastname" id="lastname" placeholder="Last name*">
+            </div>
+          </div>
+        </section>
+        <!-- Name of Artist Section -->
+        <section class="pb-3">
+          <h5 class="text-white">Name of Artist (required)</h5>
+          <div class="form-group-row d-flex">
+            <div class="d-flex flex-column col-12">
+              <label class="text-white pb-1" for="artistName">Artist Name (required)</label>
+              <input type="text" class="form-control custom-input rounded-0 text-white" style="background-color: black;"
+                name="artistName" id="artistName" placeholder="Artist name*">
+            </div>
+          </div>
+        </section>
+        <!-- Website -->
+        <section class="pb-3">
+          <div class="form-group-row d-flex">
+            <div class="d-flex flex-column col-12">
+              <label class="text-white pb-1" for="artistName">Website (required)</label>
+              <input type="text" class="form-control custom-input rounded-0 text-white" style="background-color: black;"
+                name="website" id="website" placeholder="http://*">
+            </div>
+          </div>
+        </section>
+        <!-- Streaming Link -->
+        <section class="pb-3">
+          <div class="form-group-row d-flex">
+            <div class="d-flex flex-column col-12">
+              <label class="text-white pb-1" for="artistName">Streaming Link (required)</label>
+              <input type="text" class="form-control custom-input rounded-0 text-white" style="background-color: black;"
+                name="streamingLink" id="streamingLink" placeholder="http://*">
+            </div>
+          </div>
+        </section>
+        <!-- Email -->
+        <section class="pb-3">
+          <div class="form-group-row d-flex">
+            <div class="d-flex flex-column col-12">
+              <label class="text-white pb-1" for="artistName">Email (required)</label>
+              <input type="text" class="form-control custom-input rounded-0 text-white" style="background-color: black;"
+                name="streamingLink" id="streamingLink" placeholder="http://*">
+            </div>
+          </div>
+        </section>
+        <!-- Anything Else -->
+        <section class="pb-3">
+          <div class="form-group-row d-flex">
+            <div class="d-flex flex-column col-12">
+              <label class="text-white pb-1" for="artistName">Anything else we should know?</label>
+              <textarea class="form-control custom-input rounded-0 text-white" style="background-color: black;"
+                name="extraInfo" id="extraInfo" placeholder=""></textarea>
+            </div>
+          </div>
+        </section>
+        <div class="d-flex justify-content-center pb-3">
+
+
+          <button type="submit" class="btn text-white bg-black border-white px-5 rounded-0">Submit</button>
+        </div>
+      </form>
+    </div>
+
+  </section>
+
+
+  <!-- Footer -->
+  <!-- Footer Section -->
+  <footer class="text-white py-5">
+    <div class="container">
+      <!-- Links and Contact Section -->
+      <div class="row mb-4">
+        <div class="col-md-6">
+          <ul class="list-unstyled">
+            <li><a href="mailto:hello@example.com" class="text-decoration-none text-white">Email</a></li>
+            <li><a href="https://www.facebook.com" target="_blank" class="text-white text-decoration-none">Facebook</a>
+            </li>
+            <li><a href="https://www.instagram.com" target="_blank"
+                class="text-white text-decoration-none">Instagram</a></li>
+            <li><a href="https://www.tiktok.com" class="text-decoration-none text-white">Tiktok</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h5 class="mb-3">Sign up to Our Newsletter</h5>
+          <form action="#">
+            <div class="mb-3 d-flex">
+              <input type="email" class="form-control custom-input rounded-0" style="background-color: black;"
+                name="email" placeholder="Email*">
+              <button type="submit" class="btn btn-primary bg-black border-white rounded-0">Submit</button>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input bg-black" name="checkboxOne" value="true" checked>
+              <label class="form-check-label small-text" style="font-size: .8rem;" for="checkboxOne">I consent
+                for my
+                data to be used for the purpose of the Newsletter</label>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+
+      <!-- Additional Information -->
+      <div class="row">
+        <div class="col-12">
+          <p class="small-text">2023 Experience Music Group
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap JavaScript -->
+  <script src="js/bootstrap.bundle.js"></script>
+
+</body>
+
+</html>

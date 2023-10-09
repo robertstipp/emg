@@ -153,3 +153,15 @@ h6 {
   color: #789D4A !important;
   text-decoration: underline;
 }
+.carousel-inner, .carousel-item {
+  height: 200px; /* Adjust this based on your desired carousel height */
+}
+
+
+
+.carousel-item img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+}
+
