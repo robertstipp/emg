@@ -153,15 +153,22 @@ h6 {
   color: #789D4A !important;
   text-decoration: underline;
 }
-.carousel-inner, .carousel-item {
-  height: 200px; /* Adjust this based on your desired carousel height */
+/* Custom CSS to ensure all images have the same height */
+
+
+.pad-bottom {
+  padding-bottom: 7.5rem;
 }
 
-
-
-.carousel-item img {
-  height: 100%;
-  width: auto;
-  object-fit: cover;
+.pad-top {
+  padding-top: 7.5rem;
 }
 
+.carousel-row {
+  display: flex;
+}
+
+.carousel-row img {
+  height: 150px;  
+  width: calc(100% / 10);  /* Assuming there are 6 images */
+}
